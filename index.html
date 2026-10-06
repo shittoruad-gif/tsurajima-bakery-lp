@@ -315,7 +315,7 @@ footer .en{color:#efe3cf;font-size:17px;display:block;margin-bottom:4px}
       <span class="en">TSURAJIMA BAKERY</span>
       <small>ツラジマベーカリー</small>
     </a>
-    <a href="#" class="btn-line js-line"><svg aria-hidden="true"><use href="#i-line"/></svg>公式LINE</a>
+    <a href="https://keiro.s-toru.com/c/lnk_fca610ff29532a27c55fee5f" class="btn-line js-line"><svg aria-hidden="true"><use href="#i-line"/></svg>公式LINE</a>
   </div>
 </header>
 
@@ -341,7 +341,7 @@ footer .en{color:#efe3cf;font-size:17px;display:block;margin-bottom:4px}
       <h1 class="split" aria-label="ざくっ、しゃきっ。連島れんこんを、パンにする店。">ざくっ、<br>しゃきっ。<span class="sub">連島れんこんを、パンにする店。</span></h1>
       <p class="lead">倉敷・連島町のツラジマベーカリーです。朝8時から、焼きたてのパンを並べています。</p>
       <div class="cta-block">
-        <a href="#" class="btn-line js-line"><svg aria-hidden="true"><use href="#i-line"/></svg>LINEで友だち追加する</a>
+        <a href="https://keiro.s-toru.com/c/lnk_fca610ff29532a27c55fee5f" class="btn-line js-line"><svg aria-hidden="true"><use href="#i-line"/></svg>LINEで友だち追加する</a>
         <p class="btn-note">新作・限定パンのお知らせをLINEでお届けします</p>
       </div>
     </div>
@@ -497,7 +497,7 @@ footer .en{color:#efe3cf;font-size:17px;display:block;margin-bottom:4px}
         <div class="step"><b>STEP 3</b><span>お知らせが<br>届きます</span></div>
       </div>
       <div class="cta-block">
-        <a href="#" class="btn-line js-line"><svg aria-hidden="true"><use href="#i-line"/></svg>LINEで友だち追加する</a>
+        <a href="https://keiro.s-toru.com/c/lnk_fca610ff29532a27c55fee5f" class="btn-line js-line"><svg aria-hidden="true"><use href="#i-line"/></svg>LINEで友だち追加する</a>
         <p class="btn-note">友だち追加は無料です。いつでもブロックできます。</p>
       </div>
     </div>
@@ -559,7 +559,7 @@ footer .en{color:#efe3cf;font-size:17px;display:block;margin-bottom:4px}
     <h2 class="rv">次は、どのパンに<br>会いにきますか？</h2>
     <p class="rv" style="--d:.1s">新作や限定パンが出たら、LINEでお知らせします。<br>連島のパン屋から、焼きたての便りを。</p>
     <div class="cta-block rv" style="--d:.2s">
-      <a href="#" class="btn-line js-line"><svg aria-hidden="true"><use href="#i-line"/></svg>LINEで友だち追加する</a>
+      <a href="https://keiro.s-toru.com/c/lnk_fca610ff29532a27c55fee5f" class="btn-line js-line"><svg aria-hidden="true"><use href="#i-line"/></svg>LINEで友だち追加する</a>
       <p class="btn-note">友だち追加は無料です。いつでもブロックできます。</p>
     </div>
   </div>
@@ -574,25 +574,12 @@ footer .en{color:#efe3cf;font-size:17px;display:block;margin-bottom:4px}
 </footer>
 
 <div class="sticky" id="sticky">
-  <a href="#" class="btn-line js-line"><svg aria-hidden="true"><use href="#i-line"/></svg>LINEで友だち追加する</a>
+  <a href="https://keiro.s-toru.com/c/lnk_fca610ff29532a27c55fee5f" class="btn-line js-line"><svg aria-hidden="true"><use href="#i-line"/></svg>LINEで友だち追加する</a>
 </div>
 
 <script>
-/* 公式LINEの友だち追加URL（例: https://lin.ee/xxxxxxx）。空のあいだは仮リンク扱い */
-var LINE_URL = 'https://keiro.s-toru.com/c/lnk_fca610ff29532a27c55fee5f';  /* Keiro計測リンク「集客LP」→ @847clohn */
-
-document.querySelectorAll('.js-line').forEach(function (a) {
-  if (LINE_URL) {
-    a.href = LINE_URL;
-    a.target = '_blank';
-    a.rel = 'noopener';
-  } else {
-    a.addEventListener('click', function (e) {
-      e.preventDefault();
-      alert('公式LINEのURLは準備中です（確認用の仮リンク）');
-    });
-  }
-});
+/* 公式LINEのボタン（5か所）は、HTMLの href に Keiro計測リンク「集客LP」を直接書いている（→ @847clohn）。
+   アプリ内ブラウザで止められないよう、新しいタブは開かず同じ画面で移る。URLを変えるときは5か所の href をまとめて置き換える */
 
 var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
